@@ -59,10 +59,10 @@ ecom-service-agent/
 │   │       ├── chunker.py         # Markdown → Chunk（按二级标题切分）
 │   │       ├── embedder.py        # OpenAI Embeddings 封装
 │   │       ├── retriever.py       # KnowledgeRetriever：query → 向量检索
-│   │       ├── backends/          # 向量后端（可切换）
+│   │       ├── backends/          # 向量后端
 │   │       │   ├── base.py        # VectorBackend 抽象接口
-│   │       │   ├── numpy_backend.py   # 手写余弦 + JSON（零依赖）
-│   │       │   └── chroma_backend.py  # Chroma 嵌入式向量数据库（生产代表）
+│   │       │   ├
+│   │       │   └── chroma_backend.py  # Chroma 嵌入式向量数据库
 │   │       └── knowledge/         # 知识库源文档（markdown，RAG 数据源）
 │   │           ├── 退换货政策.md
 │   │           ├── 配送说明.md
