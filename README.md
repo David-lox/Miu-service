@@ -1,29 +1,5 @@
 # 小miu-Service-Agent: 电商客服Agent系统
 
-## 技术
-
-**阶段一**
-- 纯 Prompt 实现客服对话
-- 结构化输出（Structured Output）
-- 多轮对话管理
-
-**阶段二**
-- ReAct 范式的 Agent（思考-行动交替，最经典的 Agent 范式）
-- 工具调用 / Function Calling（查订单、查库存等）
-- MCP（Model Context Protocol）集成
-- RAG 检索增强生成（接入商品库、FAQ、退换货政策等）
-
-**阶段三**
-- Multi-Agent 协作（客服路由、售前售后分流）
-- Memory：短期记忆 & 长期记忆
-- Skill：可复用的能力模块（退货处理、订单跟踪等标准化流程）✅
-- Agent 评估体系 ✅
-
-**计划篇**
-- Guardrails 安全护栏（Prompt Injection 检测、输出幻觉校验、敏感信息过滤、意图越界拦截）
-- Human-in-the-Loop 人机协作（置信度评估与自动转人工、Agent↔真人客服交接协议、上下文传递）
-- Agent Observability 可观测性（调用链 Trace、Token/延迟指标采集、工具成功率看板、异常告警）
-
 ---
 
 ## 项目架构 
@@ -131,5 +107,22 @@ ecom-service-agent/
     ├── test_skills.py             # Skill 可复用能力模块
     └── test_evaluation.py         # Agent 评估体系（沙箱 + 双层测评）
 ```
+## 计划
 
-### 运行界面
+**已实现**
+- 多轮对话管理
+- ReAct 范式的 Agent（思考-行动交替，最经典的 Agent 范式）
+- 工具调用 / Function Calling（查订单、查库存等）
+- MCP（Model Context Protocol）集成
+- RAG 检索增强生成（接入商品库、FAQ、退换货政策等）
+- Multi-Agent 协作（客服路由、售前售后分流）
+- Memory：短期记忆 & 长期记忆
+- Skill：可复用的能力模块（退货处理、订单跟踪等标准化流程）✅
+- Agent 评估体系 ✅
+
+**计划篇**
+- Guardrails 安全护栏（Prompt Injection 检测、输出幻觉校验、敏感信息过滤、意图越界拦截）
+- Human-in-the-Loop 人机协作（置信度评估与自动转人工、Agent↔真人客服交接协议、上下文传递）
+- Agent Observability 可观测性（调用链 Trace、Token/延迟指标采集、工具成功率看板、异常告警）
+  
+## 运行界面
