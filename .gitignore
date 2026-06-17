@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# Environment files
+.env
+!.env.example
+
+# Session / runtime data
+app/sessions/
+
+# OS
+.DS_Store
+
+# Documentation (uploaded separately)
+README.md
