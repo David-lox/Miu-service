@@ -7,7 +7,7 @@
 ### 当前架构
 
 ```
-ecom-service-agent/
+Miu-service/
 ├── main.py                        # CLI 入口（支持单 Agent / Multi-Agent 模式切换 + memory/skills 命令）
 ├── requirements.txt
 ├── .env.example
